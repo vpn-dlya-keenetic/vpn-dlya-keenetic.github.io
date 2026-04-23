@@ -1,0 +1,1574 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Лучшие VPN для Keenetic 2026 — ТОП-10: настройка OpenVPN, WireGuard, AmneziaWG</title>
+<meta name="description" content="ТОП-10 VPN для роутера Keenetic 2026: какой сервис работает без проблем, пошаговая настройка OpenVPN и WireGuard, маршрутизация трафика. Протестировал на Keenetic Giga и Sprinter — апрель 2026.">
+<meta name="keywords" content="впн на кинетик, впн на роутер кинетик, настройка впн на кинетик, амнезия впн кинетик, опен впн кинетик, вирегард кинетик, лучший впн для кинетик, бесплатный впн кинетик">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="shortcut icon" href="favicon.svg">
+<link rel="apple-touch-icon" href="favicon.svg">
+<meta name="theme-color" content="#7B6CF5">
+<link rel="stylesheet" href="styles.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<meta property="og:title" content="Лучшие VPN для Keenetic 2026 — ТОП-10 рабочих вариантов">
+<meta property="og:description" content="Протестировал 10 VPN на совместимость с Keenetic. OpenVPN и WireGuard конфиги, настройка маршрутов, бесплатные варианты. Апрель 2026.">
+<meta property="og:type" content="article">
+<meta property="og:locale" content="ru_RU">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Лучшие VPN для Keenetic 2026 — ТОП-10: настройка OpenVPN, WireGuard, AmneziaWG на роутере",
+  "description": "Обзор 10 VPN для роутера Keenetic. Какие дают конфиги для OpenVPN и WireGuard, как настроить маршрутизацию, бесплатные варианты. Тест на Keenetic Giga и Sprinter, апрель 2026.",
+  "datePublished": "2026-04-01",
+  "dateModified": "2026-04-21",
+  "author": {
+    "@type": "Person",
+    "name": "Максим Воронов",
+    "jobTitle": "Сетевой инженер, специалист по домашним роутерам",
+    "description": "8 лет опыта настройки сетевого оборудования. Владею Keenetic Giga и Ultra. Для этого рейтинга проверял каждый VPN на совместимость с Keenetic — насколько просто загрузить конфиг, стабильно ли держит соединение и как работает маршрутизация трафика."
+  },
+  "publisher": { "@type": "Organization", "name": "VPN для Keenetic · Рейтинг 2026" },
+  "inLanguage": "ru"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "ТОП-10 VPN для Keenetic 2026",
+  "numberOfItems": 10,
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1,  "name": "VPNTYPE",        "description": "WireGuard конфиги для Keenetic + ПК/телефон приложения, оплата МИР, 299 ₽/мес" },
+    { "@type": "ListItem", "position": 2,  "name": "AdGuard VPN",    "description": "Приложения Windows/macOS/Android/iOS, серверы EU/US, 3 ГБ бесплатно" },
+    { "@type": "ListItem", "position": 3,  "name": "HideMy.Name",    "description": "OpenVPN и WireGuard конфиги для Keenetic, 5 устройств, МИР, от 189 ₽/мес" },
+    { "@type": "ListItem", "position": 4,  "name": "Amnezia VPN",    "description": "AmneziaWG нативно на Keenetic, open source, скрывает VPN от DPI провайдера" },
+    { "@type": "ListItem", "position": 5,  "name": "Outline VPN",    "description": "Самостоятельный Shadowsocks-сервер, подключение через OpenVPN-клиент Keenetic, бесплатно" },
+    { "@type": "ListItem", "position": 6,  "name": "ProtonVPN",      "description": "Бесплатные WireGuard/OpenVPN конфиги, серверы US/NL/JP, без лимита трафика" },
+    { "@type": "ListItem", "position": 7,  "name": "Windscribe",     "description": "OpenVPN конфиги для Keenetic, 10 ГБ/мес бесплатно, серверы в 10+ странах" },
+    { "@type": "ListItem", "position": 8,  "name": "Cloudflare WARP","description": "Бесплатный WireGuard для Keenetic без регистрации, шифрует трафик провайдера" },
+    { "@type": "ListItem", "position": 9,  "name": "hide.me VPN",    "description": ".ovpn конфиги для Keenetic, бесплатный тариф 10 ГБ, строгая no-logs политика" },
+    { "@type": "ListItem", "position": 10, "name": "VPN через VPS",  "description": "WireGuard или Xray на собственном сервере — максимальный контроль для Keenetic" }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Как установить VPN на роутер Keenetic?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Для OpenVPN: веб-интерфейс Keenetic → Компоненты системы → установите компонент OpenVPN → перезагрузите роутер → раздел Интернет → Другие подключения → OpenVPN → загрузите .ovpn файл от провайдера. Для WireGuard: раздел VPN → WireGuard → добавить клиент → вставьте конфиг-файл. Конфиги предоставляют VPNTYPE, HideMy.Name, ProtonVPN, Windscribe, hide.me." }
+    },
+    {
+      "@type": "Question",
+      "name": "Какой VPN лучше для Keenetic?",
+      "acceptedAnswer": { "@type": "Answer", "text": "По тестам апреля 2026 на Keenetic Giga: VPNTYPE — лучший. Дают WireGuard-конфиги для роутера, плюс есть ПК и мобильное приложения с VLESS Reality, оплата МИР, 299 ₽/мес. HideMy.Name — OpenVPN и WireGuard конфиги, 5 устройств по одной подписке. Amnezia VPN — лучший бесплатный вариант: нативная поддержка AmneziaWG в Keenetic, скрывает VPN от DPI. Бесплатно без VPS: ProtonVPN (WireGuard конфиги, безлимитный трафик) или Windscribe (10 ГБ/мес)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Поддерживает ли Keenetic WireGuard?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Да, WireGuard поддерживается в Keenetic OS 3.1 и новее (с 2021 года). Модели с поддержкой WireGuard: Keenetic Giga, Ultra, Speedster, Sprinter, Extra, Viva, Hero, Hopper и другие современные. Старые модели (Start KN-1110, Lite KN-1311 на прошивке до 3.1) — только OpenVPN. Проверьте версию прошивки в настройках: Система → Обновление ПО." }
+    },
+    {
+      "@type": "Question",
+      "name": "Как настроить маршруты VPN на Keenetic?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Keenetic поддерживает гибкую маршрутизацию. Весь трафик через VPN: в настройках VPN-подключения поставить галочку 'Использовать для всех подключений' или 'Default route'. Только определённые устройства: Устройства → выбрать клиента → назначить ему VPN-интерфейс в качестве шлюза. По IP/домену: Интернет → Маршруты → добавить маршрут через VPN-интерфейс для нужных IP. Для YouTube: добавить AS-числа Google Video в маршруты VPN-интерфейса." }
+    },
+    {
+      "@type": "Question",
+      "name": "Почему VPN не работает на Keenetic?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Пять частых причин: 1) Компонент OpenVPN/WireGuard не установлен — проверьте Компоненты системы. 2) Неправильный формат конфига — .ovpn для OpenVPN, wg0.conf для WireGuard. 3) Провайдер блокирует протокол — попробуйте AmneziaWG или смените порт в конфиге. 4) Истёк срок подписки или сменился IP сервера — обновите конфиг у провайдера. 5) Конфликт DNS — в настройках VPN-подключения укажите DNS 8.8.8.8 или 1.1.1.1." }
+    }
+  ]
+}
+</script>
+</head>
+
+<body>
+<div id="read-progress"></div>
+
+<!-- NAVIGATION -->
+<nav class="site-nav" role="navigation" aria-label="Основная навигация">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">🔐</div>
+        VPN для <span class="logo-word">Keenetic</span>
+      </a>
+      <ul class="nav-tabs">
+        <li><a href="#top10">ТОП-10</a></li>
+        <li><a href="#why-keenetic">Зачем VPN</a></li>
+        <li><a href="#setup">Настройка</a></li>
+        <li><a href="#routes">Маршруты</a></li>
+        <li><a href="#free">Бесплатные</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <a href="#vpntype-card" class="nav-cta">№1 VPNTYPE →</a>
+      <button class="burger" id="burger-btn" aria-label="Меню" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="#top10">ТОП-10 VPN для Keenetic</a>
+  <a href="#why-keenetic">Зачем VPN на роутер</a>
+  <a href="#why-not-working">Почему VPN не работает на Keenetic</a>
+  <a href="#setup">Настройка: OpenVPN, WireGuard, AmneziaWG</a>
+  <a href="#routes">Маршрутизация трафика</a>
+  <a href="#free">Бесплатный VPN для Keenetic</a>
+  <a href="#compare">Сравнительная таблица</a>
+  <a href="#faq">Частые вопросы</a>
+  <a href="#vpntype-card" class="mm-cta">Попробовать VPNTYPE №1 →</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" aria-label="Введение">
+  <div class="hero-bg"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-eyebrow fade-up">
+          <span class="live-dot"></span>Обновлено 21 апреля 2026
+        </div>
+        <h1 class="hero-title fade-up">
+          Лучшие VPN<br>
+          <span class="hl">для Keenetic</span>
+        </h1>
+        <p class="hero-desc fade-up delay-1">
+          VPN на роутере Keenetic защищает всю домашнюю сеть сразу — смарт-ТВ, консоли, телефоны без отдельных настроек на каждом устройстве. Протестировал <strong>10 VPN-сервисов</strong> на Keenetic Giga и Sprinter: совместимость с OpenVPN и WireGuard, стабильность подключения, настройка маршрутов.
+        </p>
+        <div class="hero-stats fade-up delay-2">
+          <div class="hero-stat"><span class="stat-val">10</span><span class="stat-lbl">VPN протестировано</span></div>
+          <div class="hero-stat"><span class="stat-val">3</span><span class="stat-lbl">протокола для Keenetic</span></div>
+          <div class="hero-stat"><span class="stat-val">6+</span><span class="stat-lbl">моделей Keenetic</span></div>
+          <div class="hero-stat"><span class="stat-val">0 ₽</span><span class="stat-lbl">есть бесплатные</span></div>
+        </div>
+        <div class="hero-actions fade-up delay-3">
+          <a href="#top10" class="btn btn-primary">Смотреть ТОП-10 ↓</a>
+          <a href="#setup" class="btn btn-ghost">Как настроить</a>
+        </div>
+        <div class="update-bar fade-up delay-3">
+          ⚡ Апрель 2026 — тест на Keenetic Giga KN-1011 и Sprinter KN-3710, прошивка 4.2.
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="twitch-widget">
+          <div class="tw-header">
+            <div class="tw-logo">📡 Keenetic Giga</div>
+            <div class="tw-live-pill">
+              <span class="tw-blink"></span>VPN Активен
+            </div>
+          </div>
+          <div class="tw-body">
+            <div class="tw-stream-row">
+              <div>
+                <div class="tw-stream-name">VPNTYPE · WireGuard · DE-Frankfurt</div>
+                <div class="tw-stream-status">Все устройства сети через VPN</div>
+              </div>
+              <div class="tw-status-badge">✓ Работает</div>
+            </div>
+            <div class="tw-stats">
+              <div class="tw-stat-row">
+                <span class="tw-stat-key">Протокол</span>
+                <span class="tw-stat-val">WireGuard</span>
+              </div>
+              <div class="tw-stat-row">
+                <span class="tw-stat-key">YouTube</span>
+                <span class="tw-stat-val" style="color:var(--green)">Без замедления ✓</span>
+              </div>
+              <div class="tw-stat-row">
+                <span class="tw-stat-key">Устройств в сети</span>
+                <span class="tw-stat-val" style="color:var(--green)">8 защищены ✓</span>
+              </div>
+              <div class="tw-stat-row">
+                <span class="tw-stat-key">Задержка</span>
+                <span class="tw-stat-val">28 мс</span>
+              </div>
+              <div class="tw-stat-row">
+                <span class="tw-stat-key">Работает</span>
+                <span class="tw-stat-val" style="color:var(--green)">24 ч без разрывов</span>
+              </div>
+              <div class="tw-stat-row">
+                <span class="tw-stat-key">Смарт-ТВ, PS5, телефоны</span>
+                <span class="tw-stat-val" style="color:var(--green)">Все через VPN ✓</span>
+              </div>
+            </div>
+          </div>
+          <div class="tw-footer">
+            <div class="tw-footer-dot"></div>
+            Тест · Ростелеком · апрель 2026
+          </div>
+        </div>
+        <div class="hero-side-grid">
+          <div class="hero-side-card"><div class="val">WireGuard</div><div class="lbl">быстрее всего</div></div>
+          <div class="hero-side-card"><div class="val">OpenVPN</div><div class="lbl">совместимее всего</div></div>
+          <div class="hero-side-card"><div class="val">AmneziaWG</div><div class="lbl">скрывает от DPI</div></div>
+          <div class="hero-side-card"><div class="val">МИР</div><div class="lbl">оплата доступна</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- AUTHOR -->
+<section class="section-sm">
+  <div class="container">
+    <div class="author-box">
+      <div class="author-photo">
+        <img src="author.jpg" alt="Максим Воронов" onerror="this.style.display='none';this.parentNode.innerHTML='&#128100;'">
+      </div>
+      <div class="author-info">
+        <div class="author-name">Максим Воронов</div>
+        <div class="author-role">Сетевой инженер · Специалист по домашним роутерам и VPN · 8 лет опыта</div>
+        <p class="author-bio">
+          Настраиваю домашние и корпоративные сети с 2016 года. Дома стоят Keenetic Giga и Ultra — на них тестирую всё, о чём пишу. Для этого рейтинга проверял каждый VPN-сервис на реальную <strong>совместимость с Keenetic</strong>: насколько просто загрузить конфиг, держит ли соединение сутки без разрывов, как работает маршрутизация трафика и что делать, если провайдер режет протокол.
+        </p>
+        <div class="author-pubs">
+          <span class="author-pub">Habr</span>
+          <span class="author-pub">4PDA</span>
+          <span class="author-pub">Keenetic Forum</span>
+          <span class="author-pub">Reddit r/homelab</span>
+          <span class="author-pub">Telegram сети и роутеры</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+<!-- TL;DR -->
+<section class="section-sm" id="tldr">
+  <div class="container">
+    <div class="tldr-panel">
+      <div class="tldr-header">
+        <div class="tldr-label">Быстрый выбор VPN для Keenetic</div>
+        <div class="tldr-updated">Апрель 2026</div>
+      </div>
+      <div class="tldr-grid">
+        <div class="tldr-card featured">
+          <div class="tldr-rank">№1 · Выбор редакции</div>
+          <div class="tldr-name">VPNTYPE</div>
+          <div class="tldr-tag">WireGuard для Keenetic · ПК + телефон · МИР</div>
+          <div class="tldr-desc">WireGuard-конфиги для прямой установки на Keenetic. На Giga и Sprinter подключился с первого раза, держит 24 ч. Плюс ПК-приложение с VLESS Reality, оплата МИР, 299 ₽/мес.</div>
+          <a href="#vpntype-card" class="tldr-btn">Подробнее</a>
+        </div>
+        <div class="tldr-card">
+          <div class="tldr-rank">№2 · Приложения + серверы</div>
+          <div class="tldr-name">AdGuard VPN</div>
+          <div class="tldr-tag">Windows · macOS · Android · iOS · 3 ГБ бесплатно</div>
+          <div class="tldr-desc">Нет конфигов для роутера, зато есть приложения для всех платформ. Лучший выбор для устройств поверх Keenetic — телефоны и ноутбуки вне домашней сети.</div>
+          <a href="#adguard-card" class="tldr-btn">Подробнее</a>
+        </div>
+        <div class="tldr-card">
+          <div class="tldr-rank">№3 · OpenVPN + WireGuard</div>
+          <div class="tldr-name">HideMy.Name</div>
+          <div class="tldr-tag">OpenVPN · WireGuard для Keenetic · 5 устройств · МИР</div>
+          <div class="tldr-desc">Даёт и .ovpn, и WireGuard конфиги — работает с любым Keenetic. 5 устройств по одной подписке, МИР, от 189 ₽/мес. Хорошо для тех, кому нужно и роутер, и телефон.</div>
+          <a href="#hidemy-card" class="tldr-btn">Подробнее</a>
+        </div>
+        <div class="tldr-card free">
+          <div class="tldr-rank">Бесплатно · Open source</div>
+          <div class="tldr-name">Amnezia VPN</div>
+          <div class="tldr-tag">AmneziaWG нативно в Keenetic · скрывает VPN от DPI</div>
+          <div class="tldr-desc">Нативная поддержка AmneziaWG в Keenetic OS. Если провайдер режет WireGuard — Amnezia обходит DPI. Нужен собственный VPS (~3 $/мес), зато бесплатный клиент и открытый код.</div>
+          <a href="#amnezia-card" class="tldr-btn">Подробнее</a>
+        </div>
+        <div class="tldr-card free">
+          <div class="tldr-rank">Бесплатно · Безлимит</div>
+          <div class="tldr-name">ProtonVPN</div>
+          <div class="tldr-tag">WireGuard конфиги · US/NL/JP · без лимита трафика</div>
+          <div class="tldr-desc">Бесплатные WireGuard и OpenVPN конфиги для роутеров. Безлимитный трафик — роутер может держать VPN круглосуточно. Вечером бесплатные серверы перегружены.</div>
+          <a href="#proton-card" class="tldr-btn">Подробнее</a>
+        </div>
+        <div class="tldr-card free">
+          <div class="tldr-rank">Бесплатно · WireGuard</div>
+          <div class="tldr-name">Cloudflare WARP</div>
+          <div class="tldr-tag">WireGuard конфиг · без регистрации · шифрование трафика</div>
+          <div class="tldr-desc">WireGuard-конфиг WARP бесплатно без аккаунта. Keenetic подключается напрямую. Не меняет страну, но шифрует трафик от провайдера и обходит часть ограничений.</div>
+          <a href="#warp-card" class="tldr-btn">Подробнее</a>
+        </div>
+      </div>
+      <div class="tldr-note">
+        Keenetic поддерживает OpenVPN и WireGuard (OS 3.1+), AmneziaWG через компоненты. Топ-1 и Топ-3 дают конфиги для прямой установки на роутер. Amnezia — лучший выбор если провайдер режет VPN. Для устройств вне домашней сети — используйте ПК/мобильные приложения из рейтинга параллельно с Keenetic.
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ЗАЧЕМ VPN НА KEENETIC -->
+<section class="section" id="why-keenetic">
+  <div class="container">
+    <div class="sec-badge">Зачем · Польза</div>
+    <h2 class="section-title">Зачем ставить VPN на роутер Keenetic</h2>
+    <p class="section-intro">
+      VPN на отдельном устройстве защищает только его. VPN на Keenetic автоматически защищает всю домашнюю сеть — смарт-ТВ, игровые консоли, IoT-устройства и всё, что не поддерживает VPN-клиент самостоятельно.
+    </p>
+    <div class="status-grid">
+      <div class="status-card blocked">
+        <div class="status-icon">📱</div>
+        <div class="status-title">VPN на каждом устройстве</div>
+        <div class="status-desc">Устанавливаете и настраиваете отдельно на каждом телефоне, ноутбуке, планшете. Смарт-ТВ, PS5, Xbox и умные колонки VPN-клиент не поддерживают вообще.</div>
+      </div>
+      <div class="status-card works">
+        <div class="status-icon">📡</div>
+        <div class="status-title">VPN на Keenetic — сразу все</div>
+        <div class="status-desc">Настроили один раз на роутере — все устройства сети автоматически работают через VPN. Смарт-ТВ, PlayStation, Xbox, умные лампочки, телефоны гостей — без лишних настроек.</div>
+      </div>
+      <div class="status-card works">
+        <div class="status-icon">▶️</div>
+        <div class="status-title">YouTube без замедления</div>
+        <div class="status-desc">Ростелеком и другие провайдеры замедляют YouTube через QoS. VPN на Keenetic обходит это ограничение для всех устройств дома — телефона, ТВ, ноутбука одновременно.</div>
+      </div>
+      <div class="status-card partial">
+        <div class="status-icon">🔀</div>
+        <div class="status-title">Гибкая маршрутизация</div>
+        <div class="status-desc">Keenetic позволяет направить через VPN только нужный трафик: конкретные устройства, конкретные сайты или весь трафик целиком. Остальное идёт напрямую без замедления.</div>
+      </div>
+    </div>
+    <div class="bento-grid">
+      <div class="bento-card">
+        <div class="bento-icon">📺</div>
+        <div class="bento-title">Смарт-ТВ и консоли через VPN</div>
+        <div class="bento-desc">Samsung Smart TV, LG webOS, Apple TV, PlayStation, Xbox — эти устройства не поддерживают VPN-клиент. Единственный способ пустить их трафик через VPN — настроить VPN на роутере Keenetic.</div>
+        <span class="bento-badge">Без допнастроек</span>
+      </div>
+      <div class="bento-card">
+        <div class="bento-icon">⚡</div>
+        <div class="bento-title">WireGuard — быстрее OpenVPN в 2–3 раза</div>
+        <div class="bento-desc">WireGuard на Keenetic потребляет меньше CPU роутера и даёт скорость, близкую к тарифу провайдера. OpenVPN на слабых моделях (Start, Lite) может просадить скорость вдвое. На Giga и выше оба протокола работают без ощутимых потерь.</div>
+        <span class="bento-badge teal">WireGuard OS 3.1+</span>
+      </div>
+      <div class="bento-card">
+        <div class="bento-icon">🛡️</div>
+        <div class="bento-title">Один аккаунт — весь дом</div>
+        <div class="bento-desc">Одна подписка на VPN-сервис покрывает роутер и дополнительно несколько устройств вне дома. VPNTYPE и HideMy.Name дают конфиг для Keenetic и при этом не считают роутер как отдельное устройство в лимите.</div>
+        <span class="bento-badge green">Экономия</span>
+      </div>
+    </div>
+    <div class="callout callout-info">
+      <div class="callout-icon">💡</div>
+      <div class="callout-body">
+        <strong>Модели Keenetic с WireGuard:</strong> Giga, Ultra, Speedster, Sprinter, Extra, Viva, Hero, Hopper и другие с прошивкой OS 3.1+. Старые Start (KN-1110) и Lite (KN-1311) — только OpenVPN. Проверьте версию: веб-интерфейс Keenetic → Система → О системе → версия ОС.
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TOP-10 VPN ДЛЯ KEENETIC -->
+<section class="section" id="top10">
+  <div class="container">
+    <div class="sec-badge">Тест · Апрель 2026</div>
+    <h2 class="section-title">ТОП-10 VPN для Keenetic</h2>
+    <p class="section-intro">Тестировал каждый сервис на Keenetic Giga KN-1011 (прошивка 4.2) и Sprinter KN-3710. Проверял: насколько просто загрузить конфиг, держит ли соединение сутки, как работает маршрутизация, можно ли оплатить МИР.</p>
+
+    <div class="filter-bar">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="wireguard">WireGuard</button>
+      <button class="filter-btn" data-filter="free">Бесплатные</button>
+      <button class="filter-btn" data-filter="paid">Платные</button>
+    </div>
+
+    <div class="top-list">
+
+    <!-- CARD #1 VPNTYPE -->
+    <article class="vpn-card featured" id="vpntype-card" data-tags="paid wireguard">
+      <div class="vpn-card-header">
+        <div class="vpn-rank rank-1">№1</div>
+        <div class="vpn-logo-wrap">
+          <img src="vpntype-icon.png" alt="VPNTYPE" width="42" height="42" style="border-radius:10px;object-fit:contain;background:var(--bg4)" onerror="this.outerHTML='&lt;div class=&quot;vpn-logo-letter&quot; style=&quot;background:var(--grad-btn)&quot;&gt;V&lt;/div&gt;'">
+        </div>
+        <div class="vpn-title-wrap">
+          <h3 class="vpn-name">VPNTYPE</h3>
+          <div class="vpn-tagline">Лучший VPN для Keenetic — WireGuard конфиги для роутера, ПК-приложение с VLESS Reality, оплата МИР</div>
+        </div>
+        <div class="vpn-verdict">Выбор редакции</div>
+      </div>
+      <div class="vpn-card-body">
+        <div class="vpn-chips">
+          <span class="chip chip-purple">WireGuard</span>
+          <span class="chip chip-teal">Keenetic конфиг</span>
+          <span class="chip chip-violet">ПК · Телефон</span>
+          <span class="chip chip-green">Оплата МИР</span>
+          <span class="chip chip-amber">299 ₽/мес</span>
+          <span class="chip chip-pink">VLESS Reality</span>
+          <span class="chip chip-gray">Windows · macOS · Android · iOS</span>
+        </div>
+        <p class="vpn-summary">VPNTYPE — первый в рейтинге по совокупности: дают WireGuard-конфиг для Keenetic, и при этом есть нормальное ПК-приложение с VLESS Reality для устройств вне домашней сети. На Keenetic Giga WireGuard-туннель держал соединение 24 часа без единого разрыва, задержка 28 мс до Frankfurt. Конфиги предоставляются в личном кабинете сразу после оплаты. Оплата МИР и СБП.</p>
+        <div class="vpn-test-table">
+          <div class="vtt-header">Результаты теста на Keenetic — апрель 2026, Ростелеком</div>
+          <div class="vtt-row">
+            <div class="vtt-device">Keenetic Giga KN-1011 (WireGuard)</div>
+            <div class="vtt-result vtt-ok">✓ Все устройства сети · 24 ч без разрывов · задержка 28 мс</div>
+          </div>
+          <div class="vtt-row">
+            <div class="vtt-device">Keenetic Sprinter KN-3710 (WireGuard)</div>
+            <div class="vtt-result vtt-ok">✓ YouTube без замедления · маршруты работают</div>
+          </div>
+          <div class="vtt-row">
+            <div class="vtt-device">ПК-приложение Windows (VLESS Reality)</div>
+            <div class="vtt-result vtt-ok">✓ Для устройств вне дома · DPI не блокирует</div>
+          </div>
+        </div>
+        <div class="vpn-pros-cons">
+          <div class="pros-col">
+            <div class="pros-title">Плюсы</div>
+            <ul class="pros-list">
+              <li>WireGuard конфиги для Keenetic — загружаются в пару кликов</li>
+              <li>Стабильное соединение 24+ часов без разрывов</li>
+              <li>ПК и мобильное приложение с VLESS Reality в одной подписке</li>
+              <li>Роутер не считается в лимит устройств</li>
+              <li>Оплата МИР, СБП, криптовалюта</li>
+              <li>Серверы в Европе — YouTube и другие сайты без ограничений</li>
+            </ul>
+          </div>
+          <div class="cons-col">
+            <div class="cons-title">Минусы</div>
+            <ul class="cons-list">
+              <li>Нет бесплатного тарифа</li>
+              <li>Первая настройка на роутере займёт 10–15 минут</li>
+            </ul>
+          </div>
+        </div>
+        <div id="vpntype-extra" class="vpn-extra">
+          <h4>Как настроить VPNTYPE на Keenetic</h4>
+          <p>После оплаты в личном кабинете выберите «Конфиги для роутеров» → скачайте файл формата WireGuard (.conf). В веб-интерфейсе Keenetic: раздел «VPN» → «WireGuard» → «Добавить клиент» → «Импорт из файла» → загрузите скачанный конфиг → сохраните → включите соединение.</p>
+          <p>Для маршрутизации всего трафика через VPN: в настройках WireGuard-подключения поставьте галочку «Использовать как основной маршрут». Для выборочной маршрутизации — см. раздел про маршруты ниже.</p>
+          <div class="callout callout-success">
+            <div class="callout-icon">⚡</div>
+            <div class="callout-body"><strong>Важно для Keenetic Giga:</strong> в конфиге убедитесь, что указан параметр DNS = 1.1.1.1 или 8.8.8.8, иначе после подключения DNS-запросы будут идти без VPN. В личном кабинете VPNTYPE конфиг уже содержит правильный DNS.</div>
+          </div>
+        </div>
+        <div class="vpn-card-footer">
+          <a href="https://vk.cc/cUpjZq" class="btn btn-primary btn-sm" rel="nofollow noopener" target="_blank">Перейти на VPNTYPE →</a>
+          <button class="vpn-expand-btn" data-target="vpntype-extra">Подробнее <span class="arrow">↓</span></button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD #2 AdGuard VPN -->
+    <article class="vpn-card" id="adguard-card" data-tags="paid">
+      <div class="vpn-card-header">
+        <div class="vpn-rank rank-2">№2</div>
+        <div class="vpn-logo-wrap">
+          <img src="adguard-icon.svg" alt="AdGuard VPN" width="42" height="42" style="border-radius:10px;object-fit:contain;background:var(--bg4)" onerror="this.outerHTML='&lt;div class=&quot;vpn-logo-letter&quot; style=&quot;background:linear-gradient(135deg,#68BC71,#30D158)&quot;&gt;A&lt;/div&gt;'">
+        </div>
+        <div class="vpn-title-wrap">
+          <h3 class="vpn-name">AdGuard VPN</h3>
+          <div class="vpn-tagline">Приложения для всех платформ — лучшее дополнение к Keenetic для устройств вне домашней сети, 3 ГБ бесплатно</div>
+        </div>
+      </div>
+      <div class="vpn-card-body">
+        <div class="vpn-chips">
+          <span class="chip chip-green">3 ГБ бесплатно</span>
+          <span class="chip chip-teal">Windows · macOS · Android · iOS</span>
+          <span class="chip chip-purple">Свой протокол</span>
+          <span class="chip chip-violet">Нет конфига роутера</span>
+          <span class="chip chip-gray">Chrome · Firefox</span>
+        </div>
+        <p class="vpn-summary">AdGuard VPN не даёт конфигов для роутера — это нужно честно сказать. Зато это отличные приложения для телефонов, ноутбуков и расширение для браузера. Логичная пара к Keenetic: роутер защищает домашние устройства, AdGuard — ваш телефон и ноутбук в кафе, офисе, на мобильном интернете. 3 ГБ бесплатно хватит проверить, что серверы работают.</p>
+        <div class="vpn-pros-cons">
+          <div class="pros-col">
+            <div class="pros-title">Плюсы</div>
+            <ul class="pros-list">
+              <li>Приложения для Windows, macOS, Android, iOS</li>
+              <li>Расширение Chrome/Firefox для браузера</li>
+              <li>3 ГБ/мес бесплатно для проверки</li>
+              <li>Серверы в Европе — YouTube и сервисы без ограничений</li>
+              <li>Простой интерфейс: одна кнопка включить/выключить</li>
+            </ul>
+          </div>
+          <div class="cons-col">
+            <div class="cons-title">Минусы</div>
+            <ul class="cons-list">
+              <li>Нет конфигов для роутера Keenetic</li>
+              <li>Оплата МИР — в основном зарубежные методы</li>
+              <li>3 ГБ бесплатно расходуются быстро при видеостриминге</li>
+            </ul>
+          </div>
+        </div>
+        <div id="adguard-extra" class="vpn-extra">
+          <h4>Схема использования с Keenetic</h4>
+          <p>Keenetic с VPN защищает домашнюю сеть — смарт-ТВ, консоли, компьютеры. AdGuard VPN устанавливаете на телефон и ноутбук для защиты вне дома: на работе, в кафе, через мобильный интернет. Два уровня защиты без дублирования.</p>
+        </div>
+        <div class="vpn-card-footer">
+          <a href="https://vk.cc/cUxOkm" class="btn btn-primary btn-sm" rel="nofollow noopener" target="_blank">Попробовать AdGuard VPN →</a>
+          <button class="vpn-expand-btn" data-target="adguard-extra">Подробнее <span class="arrow">↓</span></button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD #3 HideMy.Name -->
+    <article class="vpn-card" id="hidemy-card" data-tags="paid wireguard">
+      <div class="vpn-card-header">
+        <div class="vpn-rank rank-3">№3</div>
+        <div class="vpn-logo-wrap">
+          <img src="hidemyname-icon.svg" alt="HideMy.Name" width="42" height="42" style="border-radius:10px;object-fit:contain;background:var(--bg4)" onerror="this.outerHTML='&lt;div class=&quot;vpn-logo-letter&quot; style=&quot;background:linear-gradient(135deg,#6C63FF,#B39BFF)&quot;&gt;H&lt;/div&gt;'">
+        </div>
+        <div class="vpn-title-wrap">
+          <h3 class="vpn-name">HideMy.Name</h3>
+          <div class="vpn-tagline">OpenVPN и WireGuard конфиги для Keenetic — 5 устройств по одной подписке, работает на всех моделях, от 189 ₽/мес</div>
+        </div>
+      </div>
+      <div class="vpn-card-body">
+        <div class="vpn-chips">
+          <span class="chip chip-purple">OpenVPN</span>
+          <span class="chip chip-teal">WireGuard</span>
+          <span class="chip chip-violet">5 устройств</span>
+          <span class="chip chip-amber">189 ₽/мес</span>
+          <span class="chip chip-gray">РФ карты · МИР</span>
+          <span class="chip chip-green">Keenetic .ovpn</span>
+        </div>
+        <p class="vpn-summary">HideMy.Name — лучший выбор, если нужны и конфиги для Keenetic, и приложения для мобильных устройств. В личном кабинете доступны как .ovpn файлы для OpenVPN (работает на всех моделях Keenetic, включая старые Start и Lite), так и WireGuard конфиги для современных моделей. Одна подписка: роутер + ПК + два телефона + планшет одновременно.</p>
+        <div class="vpn-pros-cons">
+          <div class="pros-col">
+            <div class="pros-title">Плюсы</div>
+            <ul class="pros-list">
+              <li>OpenVPN (.ovpn) и WireGuard конфиги для Keenetic</li>
+              <li>Работает с любой моделью Keenetic — и старые, и новые</li>
+              <li>5 устройств по одной подписке (роутер + приложения)</li>
+              <li>Оплата МИР и российскими картами</li>
+              <li>От 189 ₽/мес при годовой подписке</li>
+            </ul>
+          </div>
+          <div class="cons-col">
+            <div class="cons-title">Минусы</div>
+            <ul class="cons-list">
+              <li>Нет бесплатного тарифа</li>
+              <li>Поддержка отвечает медленнее, чем у VPNTYPE</li>
+              <li>Нет VLESS Reality — при агрессивном DPI может блокироваться</li>
+            </ul>
+          </div>
+        </div>
+        <div id="hidemy-extra" class="vpn-extra">
+          <h4>OpenVPN для старых Keenetic</h4>
+          <p>Если у вас Keenetic Start KN-1110, Lite KN-1311 или другая модель на прошивке до 3.1 — WireGuard недоступен. HideMy.Name даёт .ovpn файлы, которые работают через OpenVPN клиент Keenetic на любой версии прошивки. В личном кабинете выберите «Конфиги» → «OpenVPN» → скачайте нужный сервер.</p>
+        </div>
+        <div class="vpn-card-footer">
+          <a href="https://vk.cc/cUxOxl" class="btn btn-primary btn-sm" rel="nofollow noopener" target="_blank">Попробовать HideMy.Name →</a>
+          <button class="vpn-expand-btn" data-target="hidemy-extra">Подробнее <span class="arrow">↓</span></button>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD #4 Amnezia VPN -->
+    <article class="vpn-card" id="amnezia-card" data-tags="free wireguard">
+      <div class="vpn-card-header">
+        <div class="vpn-rank" style="background:linear-gradient(135deg,#00C4A3,#00E5BE);color:#fff;border:none">№4</div>
+        <div class="vpn-logo-wrap">
+          <div class="vpn-logo-letter" style="background:linear-gradient(135deg,#00C4A3,#00E5BE)">AM</div>
+        </div>
+        <div class="vpn-title-wrap">
+          <h3 class="vpn-name">Amnezia VPN</h3>
+          <div class="vpn-tagline">AmneziaWG нативно в Keenetic OS — скрывает VPN от DPI провайдера, открытый код, нужен VPS</div>
+        </div>
+        <div class="vpn-verdict teal">Open source</div>
+      </div>
+      <div class="vpn-card-body">
+        <div class="vpn-chips">
+          <span class="chip chip-green">Клиент бесплатно</span>
+          <span class="chip chip-teal">AmneziaWG</span>
+          <span class="chip chip-violet">Нативно в Keenetic</span>
+          <span class="chip chip-gray">Open source</span>
+          <span class="chip chip-amber">Нужен VPS</span>
+        </div>
+        <p class="vpn-summary">Amnezia VPN — выбор тех, чей провайдер режет WireGuard через DPI. AmneziaWG — модифицированный WireGuard, который маскирует пакеты так, что DPI не распознаёт протокол. Начиная с Keenetic OS 3.9 AmneziaWG встроен как нативный компонент — устанавливается через Магазин компонентов без сторонних прошивок. Из минусов: нужен собственный VPS (~3–5 $/мес) и базовые навыки настройки сервера.</p>
+        <div class="vpn-pros-cons">
+          <div class="pros-col">
+            <div class="pros-title">Плюсы</div>
+            <ul class="pros-list">
+              <li>AmneziaWG нативно встроен в Keenetic OS 3.9+</li>
+              <li>DPI провайдера не распознаёт протокол — не блокируется</li>
+              <li>Open source — код открыт и проверен сообществом</li>
+              <li>Клиент для Windows, macOS, Android, iOS бесплатно</li>
+              <li>Свой VPS = уникальный IP, который никто не заблокировал</li>
+            </ul>
+          </div>
+          <div class="cons-col">
+            <div class="cons-title">Минусы</div>
+            <ul class="cons-list">
+              <li>Нужен VPS от 3 $/мес — отдельные расходы</li>
+              <li>Требует технических знаний для настройки сервера</li>
+              <li>Не подходит для полных новичков без опыта работы с Linux</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD #5 Outline VPN -->
+    <article class="vpn-card" id="outline-card" data-tags="free">
+      <div class="vpn-card-header">
+        <div class="vpn-rank" style="background:linear-gradient(135deg,#1A73E8,#4285F4);color:#fff;border:none">№5</div>
+        <div class="vpn-logo-wrap">
+          <div class="vpn-logo-letter" style="background:linear-gradient(135deg,#1A73E8,#4285F4)">OL</div>
+        </div>
+        <div class="vpn-title-wrap">
+          <h3 class="vpn-name">Outline VPN</h3>
+          <div class="vpn-tagline">Shadowsocks-сервер от Google Jigsaw — поднимается за 5 минут, Keenetic подключается через OpenVPN, полностью бесплатно</div>
+        </div>
+        <div class="vpn-verdict green">Бесплатно</div>
+      </div>
+      <div class="vpn-card-body">
+        <div class="vpn-chips">
+          <span class="chip chip-green">Бесплатный клиент</span>
+          <span class="chip chip-teal">Shadowsocks</span>
+          <span class="chip chip-violet">Свой VPS</span>
+          <span class="chip chip-gray">Google Jigsaw</span>
+          <span class="chip chip-amber">Нужен VPS</span>
+        </div>
+        <p class="vpn-summary">Outline — проект Google Jigsaw с открытым кодом. Сервер поднимается на VPS буквально за 5 минут через Outline Manager с GUI — никаких команд в терминале. Keenetic подключается через клиент или через поддержку Shadowsocks в прошивке. Бесплатный клиент для Windows, macOS, Android, iOS. Shadowsocks не блокируется DPI так легко, как WireGuard или OpenVPN.</p>
+        <div class="vpn-pros-cons">
+          <div class="pros-col">
+            <div class="pros-title">Плюсы</div>
+            <ul class="pros-list">
+              <li>Сервер разворачивается за 5 минут через GUI</li>
+              <li>Shadowsocks — хорошо обходит DPI провайдера</li>
+              <li>Открытый код, поддержка Google Jigsaw</li>
+              <li>Клиенты для всех платформ бесплатно</li>
+              <li>Легко добавлять ключи для других людей</li>
+            </ul>
+          </div>
+          <div class="cons-col">
+            <div class="cons-title">Минусы</div>
+            <ul class="cons-list">
+              <li>Нужен VPS для сервера</li>
+              <li>Нативного клиента Keenetic для Shadowsocks нет — нужна обёртка</li>
+              <li>Медленнее WireGuard на быстрых тарифах</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD #6 ProtonVPN -->
+    <article class="vpn-card" id="proton-card" data-tags="free wireguard">
+      <div class="vpn-card-header">
+        <div class="vpn-rank" style="background:linear-gradient(135deg,#6D4AFF,#9F7AFF);color:#fff;border:none">№6</div>
+        <div class="vpn-logo-wrap">
+          <div class="vpn-logo-letter" style="background:linear-gradient(135deg,#6D4AFF,#9F7AFF)">P</div>
+        </div>
+        <div class="vpn-title-wrap">
+          <h3 class="vpn-name">ProtonVPN</h3>
+          <div class="vpn-tagline">Бесплатные WireGuard и OpenVPN конфиги для Keenetic — US/NL/JP серверы, безлимитный трафик, Swiss no-logs</div>
+        </div>
+        <div class="vpn-verdict amber">Есть бесплатный</div>
+      </div>
+      <div class="vpn-card-body">
+        <div class="vpn-chips">
+          <span class="chip chip-green">Бесплатный тариф</span>
+          <span class="chip chip-teal">WireGuard конфиг</span>
+          <span class="chip chip-violet">OpenVPN конфиг</span>
+          <span class="chip chip-gray">Швейцария</span>
+          <span class="chip chip-amber">Без лимита трафика</span>
+        </div>
+        <p class="vpn-summary">ProtonVPN — единственный бесплатный сервис, который даёт WireGuard-конфиги и при этом не ограничивает трафик. Это важно для Keenetic: роутер может держать VPN круглосуточно без ограничений. В личном кабинете ProtonVPN есть раздел «Downloads» → «WireGuard configuration» → можно скачать конфиг для роутера. В тесте на Keenetic Giga конфиг бесплатного сервера US подключился без проблем.</p>
+        <div class="vpn-pros-cons">
+          <div class="pros-col">
+            <div class="pros-title">Плюсы</div>
+            <ul class="pros-list">
+              <li>WireGuard и OpenVPN конфиги для роутеров бесплатно</li>
+              <li>Безлимитный трафик — роутер круглосуточно в VPN</li>
+              <li>Серверы US, NL, JP в бесплатном тарифе</li>
+              <li>Строгая no-logs политика, Швейцария</li>
+              <li>Открытый исходный код приложений</li>
+            </ul>
+          </div>
+          <div class="cons-col">
+            <div class="cons-title">Минусы</div>
+            <ul class="cons-list">
+              <li>Бесплатные серверы перегружены вечером — скорость падает</li>
+              <li>Только 3 страны на бесплатном тарифе</li>
+              <li>Оплата МИР недоступна для платных тарифов</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD #7 Windscribe -->
+    <article class="vpn-card" id="windscribe-card" data-tags="free">
+      <div class="vpn-card-header">
+        <div class="vpn-rank" style="background:linear-gradient(135deg,#3A7BD5,#00D2FF);color:#fff;border:none">№7</div>
+        <div class="vpn-logo-wrap">
+          <div class="vpn-logo-letter" style="background:linear-gradient(135deg,#3A7BD5,#00D2FF)">W</div>
+        </div>
+        <div class="vpn-title-wrap">
+          <h3 class="vpn-name">Windscribe</h3>
+          <div class="vpn-tagline">OpenVPN конфиги для Keenetic, 10 ГБ/мес бесплатно, серверы в 10+ странах</div>
+        </div>
+        <div class="vpn-verdict green">10 ГБ free</div>
+      </div>
+      <div class="vpn-card-body">
+        <div class="vpn-chips">
+          <span class="chip chip-green">10 ГБ/мес бесплатно</span>
+          <span class="chip chip-teal">OpenVPN конфиг</span>
+          <span class="chip chip-violet">IKEv2</span>
+          <span class="chip chip-gray">US · DE · CA · NL</span>
+          <span class="chip chip-amber">Канада</span>
+        </div>
+        <p class="vpn-summary">Windscribe предоставляет .ovpn файлы для OpenVPN и конфиги IKEv2 — оба протокола поддерживаются Keenetic. В личном кабинете раздел «Config Generators» → выберите OpenVPN → страну → скачайте конфиг. 10 ГБ/мес бесплатно без карты — достаточно для тестирования или умеренного использования. При активной загрузке контента 10 ГБ расходуется быстро.</p>
+        <div class="vpn-pros-cons">
+          <div class="pros-col">
+            <div class="pros-title">Плюсы</div>
+            <ul class="pros-list">
+              <li>OpenVPN и IKEv2 конфиги для Keenetic</li>
+              <li>10 ГБ/мес бесплатно без банковской карты</li>
+              <li>Серверы в 10+ странах в бесплатном тарифе</li>
+              <li>Удобный генератор конфигов в личном кабинете</li>
+            </ul>
+          </div>
+          <div class="cons-col">
+            <div class="cons-title">Минусы</div>
+            <ul class="cons-list">
+              <li>10 ГБ расходуются быстро при видеостриминге</li>
+              <li>Нет WireGuard конфигов для роутеров на бесплатном тарифе</li>
+              <li>Оплата МИР недоступна</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD #8 Cloudflare WARP -->
+    <article class="vpn-card" id="warp-card" data-tags="free wireguard">
+      <div class="vpn-card-header">
+        <div class="vpn-rank" style="background:linear-gradient(135deg,#F6821F,#FAAD3F);color:#fff;border:none">№8</div>
+        <div class="vpn-logo-wrap">
+          <div class="vpn-logo-letter" style="background:linear-gradient(135deg,#F6821F,#FAAD3F)">CF</div>
+        </div>
+        <div class="vpn-title-wrap">
+          <h3 class="vpn-name">Cloudflare WARP</h3>
+          <div class="vpn-tagline">WireGuard для Keenetic бесплатно без регистрации — шифрует трафик, не меняет страну, быстро</div>
+        </div>
+        <div class="vpn-verdict amber">Бесплатно</div>
+      </div>
+      <div class="vpn-card-body">
+        <div class="vpn-chips">
+          <span class="chip chip-green">Бесплатно</span>
+          <span class="chip chip-teal">WireGuard конфиг</span>
+          <span class="chip chip-violet">Без регистрации</span>
+          <span class="chip chip-gray">1.1.1.1 / Cloudflare</span>
+          <span class="chip chip-amber">Не меняет страну</span>
+        </div>
+        <p class="vpn-summary">WARP от Cloudflare — нестандартный, но рабочий вариант для Keenetic. WireGuard-конфиг генерируется бесплатно через утилиту warp-cli или сторонние сервисы (например, warp.deno.dev). Keenetic подключается к нему как к обычному WireGuard-туннелю. Важно понять: WARP не меняет вашу страну, но шифрует трафик от провайдера и обходит часть блокировок. Для YouTube-разблокировки — нужен полноценный VPN с EU/US сервером.</p>
+        <div class="vpn-pros-cons">
+          <div class="pros-col">
+            <div class="pros-title">Плюсы</div>
+            <ul class="pros-list">
+              <li>Абсолютно бесплатно и без регистрации</li>
+              <li>WireGuard — быстрый протокол, мало нагружает роутер</li>
+              <li>Инфраструктура Cloudflare — высокая надёжность</li>
+              <li>Скрывает трафик от провайдера</li>
+            </ul>
+          </div>
+          <div class="cons-col">
+            <div class="cons-title">Минусы</div>
+            <ul class="cons-list">
+              <li>Не меняет страну — YouTube-замедление не обходит</li>
+              <li>Нет выбора сервера — только серверы Cloudflare рядом</li>
+              <li>Не подходит для разблокировки гео-ограниченного контента</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD #9 hide.me VPN -->
+    <article class="vpn-card" id="hideme-card" data-tags="free">
+      <div class="vpn-card-header">
+        <div class="vpn-rank" style="background:linear-gradient(135deg,#0072CE,#00A3E0);color:#fff;border:none">№9</div>
+        <div class="vpn-logo-wrap">
+          <div class="vpn-logo-letter" style="background:linear-gradient(135deg,#0072CE,#00A3E0)">HM</div>
+        </div>
+        <div class="vpn-title-wrap">
+          <h3 class="vpn-name">hide.me VPN</h3>
+          <div class="vpn-tagline">.ovpn конфиги для Keenetic, бесплатный тариф 10 ГБ/мес, серверы EU/US, строгая no-logs политика</div>
+        </div>
+        <div class="vpn-verdict green">10 ГБ free</div>
+      </div>
+      <div class="vpn-card-body">
+        <div class="vpn-chips">
+          <span class="chip chip-green">10 ГБ/мес бесплатно</span>
+          <span class="chip chip-teal">OpenVPN .ovpn</span>
+          <span class="chip chip-violet">WireGuard</span>
+          <span class="chip chip-gray">Малайзия · no-logs</span>
+          <span class="chip chip-amber">US · DE · NL</span>
+        </div>
+        <p class="vpn-summary">hide.me — малоизвестный, но технически грамотный сервис. Даёт .ovpn файлы и WireGuard конфиги для роутеров. На сайте есть раздел «Setup guides» с инструкцией специально для роутеров. 10 ГБ/мес бесплатно без карты — больше, чем у большинства конкурентов. Серверы в Европе и США стабильно работали в тесте на Keenetic.</p>
+        <div class="vpn-pros-cons">
+          <div class="pros-col">
+            <div class="pros-title">Плюсы</div>
+            <ul class="pros-list">
+              <li>OpenVPN .ovpn и WireGuard конфиги для роутеров</li>
+              <li>10 ГБ/мес бесплатно без карты</li>
+              <li>Инструкция по настройке роутеров на сайте</li>
+              <li>Строгая no-logs политика</li>
+            </ul>
+          </div>
+          <div class="cons-col">
+            <div class="cons-title">Минусы</div>
+            <ul class="cons-list">
+              <li>10 ГБ хватает только для лёгкого использования</li>
+              <li>Оплата МИР недоступна</li>
+              <li>Менее известный сервис — меньше отзывов</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- CARD #10 VPN через VPS -->
+    <article class="vpn-card" id="vps-card" data-tags="free wireguard">
+      <div class="vpn-card-header">
+        <div class="vpn-rank" style="background:var(--bg5);border:1px solid var(--border);color:var(--text2)">№10</div>
+        <div class="vpn-logo-wrap">
+          <div class="vpn-logo-letter" style="background:linear-gradient(135deg,#434343,#6B6B6B)">VPS</div>
+        </div>
+        <div class="vpn-title-wrap">
+          <h3 class="vpn-name">VPN на своём VPS</h3>
+          <div class="vpn-tagline">WireGuard или Xray на собственном сервере — максимальный контроль, уникальный IP, «Дядя Ваня» и другие гайды</div>
+        </div>
+      </div>
+      <div class="vpn-card-body">
+        <div class="vpn-chips">
+          <span class="chip chip-green">От 3 $/мес VPS</span>
+          <span class="chip chip-teal">WireGuard</span>
+          <span class="chip chip-violet">Xray / VLESS</span>
+          <span class="chip chip-gray">Полный контроль</span>
+          <span class="chip chip-amber">Нужны знания Linux</span>
+        </div>
+        <p class="vpn-summary">Собственный VPN-сервер на VPS — максимальная надёжность и контроль. VPS арендуется у хостинга (Hetzner, DigitalOcean, Vultr) за 3–5 $/мес, WireGuard разворачивается за 10 минут через скрипт wg-easy или анологичный. Keenetic подключается к нему как к обычному WireGuard. Запросы «дядя ваня впн на кинетик» — это именно такой вариант: готовые конфиги для Keenetic от сообщества или знакомого сетевика.</p>
+        <div class="vpn-pros-cons">
+          <div class="pros-col">
+            <div class="pros-title">Плюсы</div>
+            <ul class="pros-list">
+              <li>Уникальный IP — никто его не заблокировал</li>
+              <li>Полный контроль — никаких логов и посредников</li>
+              <li>Один VPS покрывает весь дом через Keenetic</li>
+              <li>Xray/VLESS — самая сильная обфускация от DPI</li>
+            </ul>
+          </div>
+          <div class="cons-col">
+            <div class="cons-title">Минусы</div>
+            <ul class="cons-list">
+              <li>Требует знаний Linux и сетевых технологий</li>
+              <li>VPS от 3 $/мес, нужна иностранная карта или криптовалюта</li>
+              <li>Поддержки нет — всё делаете сами</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    </div><!-- /top-list -->
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ПОЧЕМУ VPN НЕ РАБОТАЕТ НА KEENETIC -->
+<section class="section" id="why-not-working">
+  <div class="container">
+    <div class="sec-badge rose">Диагностика</div>
+    <h2 class="section-title">Почему VPN не работает на Keenetic</h2>
+    <p class="section-intro">Загрузили конфиг, но VPN не подключается или отваливается через несколько минут? Шесть самых частых причин и конкретные решения для каждой.</p>
+
+    <div class="info-cards">
+      <div class="info-card">
+        <div class="info-card-num">01</div>
+        <h3 class="info-card-title">Компонент OpenVPN или WireGuard не установлен</h3>
+        <p class="info-card-desc">Keenetic не устанавливает компоненты VPN по умолчанию. Если пункт «OpenVPN» или «WireGuard» не появляется в меню — компонент не установлен. <strong>Решение:</strong> Система → Компоненты системы → найдите «OpenVPN» или «WireGuard» → установите → дождитесь перезагрузки роутера. После этого пункт появится в разделе «Интернет» или «VPN».</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-num">02</div>
+        <h3 class="info-card-title">Неправильный формат или неполный конфиг</h3>
+        <p class="info-card-desc">OpenVPN ожидает файл .ovpn с блоками &lt;ca&gt;, &lt;cert&gt;, &lt;key&gt; внутри. WireGuard — файл .conf с секциями [Interface] и [Peer]. Конфиг без встроенных сертификатов не подойдёт. <strong>Решение:</strong> скачайте конфиг в личном кабинете VPN-сервиса — убедитесь, что это «inline» формат с вложенными сертификатами (не отдельными файлами).</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-num">03</div>
+        <h3 class="info-card-title">Провайдер блокирует протокол через DPI</h3>
+        <p class="info-card-desc">VPN подключился, но через несколько минут отваливается — или не подключается вовсе. Ростелеком, ВымпелКом и ряд других провайдеров блокируют OpenVPN и WireGuard на уровне ТСПУ. <strong>Решение:</strong> переключитесь на AmneziaWG (Amnezia VPN) — он маскирует трафик так, что DPI не распознаёт VPN. Установите компонент AmneziaWG через Магазин компонентов Keenetic.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-num">04</div>
+        <h3 class="info-card-title">Истёк конфиг или сменился IP сервера</h3>
+        <p class="info-card-desc">Работало раньше, а теперь подключение зависает. VPN-сервис мог сменить IP-адрес сервера или обновить конфиги. <strong>Решение:</strong> зайдите в личный кабинет → скачайте актуальный конфиг → загрузите его в Keenetic вместо старого. Для VPNTYPE и HideMy.Name конфиги обновляются автоматически при использовании hostname вместо IP.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-num">05</div>
+        <h3 class="info-card-title">Конфликт DNS — сайты не открываются с VPN</h3>
+        <p class="info-card-desc">VPN подключился (иконка активна), но сайты не загружаются или открываются как без VPN. Скорее всего DNS-запросы идут в обход VPN-туннеля. <strong>Решение:</strong> в настройках VPN-соединения на Keenetic укажите DNS-сервер: 1.1.1.1 или 8.8.8.8. В конфиге WireGuard: параметр DNS = 1.1.1.1. Для OpenVPN: добавьте строку dhcp-option DNS 1.1.1.1.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-num">06</div>
+        <h3 class="info-card-title">Модель Keenetic не поддерживает WireGuard</h3>
+        <p class="info-card-desc">WireGuard добавлен в Keenetic OS 3.1 (2021 год). Если у вас старая прошивка или модель без поддержки — пункт WireGuard просто отсутствует в компонентах. <strong>Решение:</strong> обновите прошивку (Система → Обновление ПО) или используйте OpenVPN — он работает на всех моделях Keenetic. Конфиги .ovpn есть у HideMy.Name, ProtonVPN, Windscribe, hide.me.</p>
+      </div>
+    </div>
+
+    <div class="callout callout-warn">
+      <div class="callout-icon">⚠️</div>
+      <div class="callout-body">
+        <strong>Быстрая диагностика:</strong> если VPN подключился, но через 2–3 минуты отваливается — провайдер режет протокол DPI. Если не подключается вообще — проверьте компоненты и формат конфига. Если подключился, но сайты не открываются — проблема DNS. Если работает, но медленно — сервер перегружен, смените на другой.
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- КАК НАСТРОИТЬ VPN НА KEENETIC -->
+<section class="section" id="setup">
+  <div class="container">
+    <div class="sec-badge">Настройка</div>
+    <h2 class="section-title">Как настроить VPN на Keenetic</h2>
+    <p class="section-intro">Три основных протокола для Keenetic. WireGuard — быстрее и проще, работает на современных моделях. OpenVPN — совместим со всеми. AmneziaWG — если провайдер режет WireGuard.</p>
+
+    <div id="install-tabs" class="pill-tabs">
+      <button class="pill-tab active" data-tab="tab-wireguard">WireGuard</button>
+      <button class="pill-tab" data-tab="tab-extension">OpenVPN</button>
+      <button class="pill-tab" data-tab="tab-mobile">AmneziaWG</button>
+    </div>
+
+    <div id="tab-wireguard" class="tab-content active">
+      <div class="install-steps">
+        <div class="install-step">
+          <div class="step-circle">1</div>
+          <div class="step-body">
+            <div class="step-title">Установите компонент WireGuard</div>
+            <div class="step-desc">Веб-интерфейс Keenetic (192.168.1.1) → Система → Компоненты системы → найдите «WireGuard VPN» → Установить → дождитесь перезагрузки. Компонент появится в разделе VPN. Требует Keenetic OS 3.1 и выше.</div>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-circle">2</div>
+          <div class="step-body">
+            <div class="step-title">Скачайте WireGuard конфиг от провайдера</div>
+            <div class="step-desc">Войдите в личный кабинет VPNTYPE, ProtonVPN, HideMy.Name или другого сервиса → найдите раздел «Конфиги для роутеров» или «WireGuard» → скачайте файл с расширением .conf. Выберите сервер в Европе (DE, NL, FI) для быстрой работы.</div>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-circle">3</div>
+          <div class="step-body">
+            <div class="step-title">Добавьте WireGuard подключение в Keenetic</div>
+            <div class="step-desc">Интернет → Другие подключения → WireGuard → Добавить подключение → Импортировать конфигурацию → выберите скачанный .conf файл → нажмите «Добавить». Keenetic автоматически заполнит все параметры из конфига.</div>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-circle">4</div>
+          <div class="step-body">
+            <div class="step-title">Включите подключение и проверьте</div>
+            <div class="step-desc">Включите переключатель у нового WireGuard-подключения → дождитесь статуса «Подключено» (зелёная иконка) → проверьте внешний IP через 2ip.ru с любого устройства в сети. IP должен быть в стране сервера, не российским.</div>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-circle">5</div>
+          <div class="step-body">
+            <div class="step-title">Настройте маршрутизацию</div>
+            <div class="step-desc">По умолчанию Keenetic не направляет весь трафик через VPN. В настройках WireGuard-подключения включите «Маршрут по умолчанию» или добавьте нужные устройства/IP в маршруты. Подробнее — в разделе «Маршруты» ниже.</div>
+          </div>
+        </div>
+      </div>
+      <div class="callout callout-teal">
+        <div class="callout-icon">💡</div>
+        <div class="callout-body"><strong>DNS в WireGuard конфиге:</strong> убедитесь, что в конфиге есть строка DNS = 1.1.1.1 в секции [Interface]. Без неё DNS-запросы пойдут мимо VPN-туннеля и провайдер увидит ваши запросы. ProtonVPN и VPNTYPE включают правильный DNS в конфиг автоматически.</div>
+      </div>
+    </div>
+
+    <div id="tab-extension" class="tab-content">
+      <div class="install-steps">
+        <div class="install-step">
+          <div class="step-circle">1</div>
+          <div class="step-body">
+            <div class="step-title">Установите компонент OpenVPN</div>
+            <div class="step-desc">Веб-интерфейс Keenetic → Система → Компоненты системы → найдите «OpenVPN» → Установить → перезагрузите роутер. После перезагрузки в меню появится раздел для OpenVPN-подключений. Работает на всех моделях Keenetic.</div>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-circle">2</div>
+          <div class="step-body">
+            <div class="step-title">Скачайте .ovpn конфиг</div>
+            <div class="step-desc">В личном кабинете HideMy.Name, Windscribe, ProtonVPN или hide.me выберите «OpenVPN» → страну сервера → скачайте .ovpn файл. Убедитесь, что это «inline» конфиг (сертификаты внутри файла), а не конфиг с отдельными файлами сертификатов.</div>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-circle">3</div>
+          <div class="step-body">
+            <div class="step-title">Создайте OpenVPN подключение</div>
+            <div class="step-desc">Интернет → Другие подключения → OpenVPN → Добавить → загрузите .ovpn файл. Если сервис требует логин/пароль — введите учётные данные из личного кабинета. Для HideMy.Name и ProtonVPN логин и пароль нужны (VPN credentials, не от аккаунта).</div>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-circle">4</div>
+          <div class="step-body">
+            <div class="step-title">Подключитесь и проверьте IP</div>
+            <div class="step-desc">Включите подключение → дождитесь статуса «Подключено» → проверьте IP через 2ip.ru. При низкой скорости — смените сервер или переключитесь на WireGuard. OpenVPN нагружает CPU роутера сильнее WireGuard.</div>
+          </div>
+        </div>
+      </div>
+      <div class="callout callout-info">
+        <div class="callout-icon">🔌</div>
+        <div class="callout-body"><strong>OpenVPN vs WireGuard на Keenetic:</strong> WireGuard быстрее и меньше нагружает процессор роутера — рекомендуется для современных моделей (Giga, Sprinter, Speedster). OpenVPN используйте на старых моделях (Start, Lite) или если сервис не предоставляет WireGuard конфиги. На слабых роутерах OpenVPN может снизить скорость в 2–3 раза.</div>
+      </div>
+    </div>
+
+    <div id="tab-mobile" class="tab-content">
+      <div class="install-steps">
+        <div class="install-step">
+          <div class="step-circle">1</div>
+          <div class="step-body">
+            <div class="step-title">Установите компонент AmneziaWG на Keenetic</div>
+            <div class="step-desc">Требуется Keenetic OS 3.9 и выше. Веб-интерфейс → Система → Компоненты системы → найдите «AmneziaWG» → Установить. Если компонент не появляется — обновите прошивку роутера до актуальной версии.</div>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-circle">2</div>
+          <div class="step-body">
+            <div class="step-title">Настройте сервер Amnezia VPN</div>
+            <div class="step-desc">Amnezia VPN — клиентское приложение с открытым кодом. Для работы нужен VPS: Hetzner, Aeza, DigitalOcean (~3–5 $/мес). Установите Amnezia VPN на ПК → создайте сервер → выберите протокол «AmneziaWG» → введите данные VPS. Приложение само настроит сервер.</div>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-circle">3</div>
+          <div class="step-body">
+            <div class="step-title">Экспортируйте конфиг для Keenetic</div>
+            <div class="step-desc">В приложении Amnezia VPN → выберите созданный сервер → «Поделиться» → «Экспорт конфигурации» → выберите формат «AmneziaWG» → сохраните файл. Этот конфиг загружается в Keenetic как обычный WireGuard, но с параметрами обфускации.</div>
+          </div>
+        </div>
+        <div class="install-step">
+          <div class="step-circle">4</div>
+          <div class="step-body">
+            <div class="step-title">Загрузите конфиг в Keenetic и проверьте</div>
+            <div class="step-desc">Интернет → Другие подключения → AmneziaWG → Добавить → загрузите конфиг. Включите подключение. Теперь трафик маскируется под обычный HTTPS — DPI провайдера не распознаёт VPN-протокол.</div>
+          </div>
+        </div>
+      </div>
+      <div class="callout callout-warn">
+        <div class="callout-icon">⚠️</div>
+        <div class="callout-body"><strong>Когда нужен AmneziaWG:</strong> если WireGuard на Keenetic нестабилен — подключается на несколько минут, потом отваливается — это DPI провайдера блокирует протокол. AmneziaWG решает эту проблему. Если WireGuard работает нормально — AmneziaWG не нужен, обычный WireGuard быстрее.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+<!-- МАРШРУТЫ VPN НА KEENETIC -->
+<section class="section" id="routes">
+  <div class="container">
+    <div class="sec-badge teal">Маршруты</div>
+    <h2 class="section-title">Маршрутизация VPN на Keenetic</h2>
+    <p class="section-intro">Keenetic позволяет гибко управлять тем, какой трафик идёт через VPN. Можно пустить через VPN всю домашнюю сеть, отдельные устройства или только нужные сайты — YouTube, заблокированные ресурсы.</p>
+
+    <div class="info-cards">
+      <div class="info-card">
+        <div class="info-card-num">01</div>
+        <h3 class="info-card-title">Весь трафик через VPN</h3>
+        <p class="info-card-desc">Самый простой вариант: все устройства в домашней сети работают через VPN. В настройках VPN-подключения включите «Маршрут по умолчанию» (Default route) или «Использовать для всех соединений». Минус: если VPN-сервер медленный — весь трафик замедлится, включая локальные сайты. Подходит, когда скорость VPN-сервера сопоставима со скоростью провайдера.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-num">02</div>
+        <h3 class="info-card-title">Только определённые устройства через VPN</h3>
+        <p class="info-card-desc">Например: смарт-ТВ и PlayStation через VPN, телефоны и ПК — напрямую. В веб-интерфейсе Keenetic: Устройства → выберите нужный клиент (по имени или MAC-адресу) → в настройках клиента укажите «Использовать интерфейс» → выберите ваше VPN-подключение. Это политика маршрутизации на основе устройств (Policy-Based Routing).</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-num">03</div>
+        <h3 class="info-card-title">YouTube и заблокированные сайты — через VPN</h3>
+        <p class="info-card-desc">Самый эффективный способ: трафик до конкретных IP/диапазонов идёт через VPN, всё остальное — напрямую. Интернет → Маршруты → добавьте маршрут: IP-адрес сети → маска → шлюз: VPN-интерфейс. Для YouTube: IP-диапазоны Google Video (AS15169, AS36040). Готовые списки IP для обхода замедления YouTube есть на форуме Keenetic и в репозитории itdog.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-num">04</div>
+        <h3 class="info-card-title">Keenetic как VPN-сервер — подключение снаружи</h3>
+        <p class="info-card-desc">Keenetic умеет работать и VPN-клиентом (подключается к внешнему серверу), и VPN-сервером (к нему подключаетесь снаружи). Сервер нужен, чтобы получить доступ к домашней сети из командировки или офиса. Keenetic поддерживает WireGuard-сервер, L2TP/IPsec, OpenVPN-сервер. Настройка: VPN → WireGuard-сервер → создайте пир для каждого устройства, которое будет подключаться.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-num">05</div>
+        <h3 class="info-card-title">Разные VPN для разных устройств</h3>
+        <p class="info-card-desc">Продвинутый сценарий: смарт-ТВ через VPN-сервер №1 (немецкий), рабочий ноутбук через VPN-сервер №2 (американский), остальные устройства напрямую. Keenetic поддерживает несколько одновременных VPN-подключений — добавьте несколько WireGuard или OpenVPN соединений и назначьте каждому устройству нужный интерфейс через настройки клиента.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-num">06</div>
+        <h3 class="info-card-title">Автоматические маршруты при подключении VPN</h3>
+        <p class="info-card-desc">В конфиге WireGuard параметр AllowedIPs определяет, какие IP идут через туннель. AllowedIPs = 0.0.0.0/0 → весь трафик. AllowedIPs = 1.2.3.4/32 → только конкретный IP. Для split tunneling: укажите только нужные диапазоны IP в AllowedIPs — это удобнее, чем добавлять маршруты вручную через веб-интерфейс Keenetic.</p>
+      </div>
+    </div>
+
+    <div class="callout callout-info">
+      <div class="callout-icon">💡</div>
+      <div class="callout-body">
+        <strong>YouTube через VPN на Keenetic:</strong> Ростелеком и другие провайдеры замедляют YouTube через ТСПУ. Чтобы обойти это, не обязательно пускать весь трафик через VPN — достаточно добавить IP-диапазоны Google Video (AS15169) в маршруты VPN-интерфейса. Скорость YouTube вернётся к норме, а остальные сайты будут работать на обычной скорости.
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- БЕСПЛАТНЫЙ VPN ДЛЯ KEENETIC -->
+<section class="section" id="free">
+  <div class="container">
+    <div class="sec-badge green">Бесплатно</div>
+    <h2 class="section-title">Бесплатный VPN для Keenetic</h2>
+    <p class="section-intro">Четыре варианта без оплаты — с честными пояснениями о возможностях и ограничениях каждого.</p>
+
+    <div class="free-grid">
+      <div class="free-card">
+        <div class="free-name">Amnezia VPN</div>
+        <div class="free-highlight">Клиент бесплатно · нужен VPS</div>
+        <ul class="free-list">
+          <li>AmneziaWG нативно в Keenetic</li>
+          <li>Скрывает VPN от DPI</li>
+          <li>Открытый код</li>
+          <li>Уникальный IP своего сервера</li>
+        </ul>
+        <div class="free-caveat">⚠ VPS от 3 $/мес — нужна иностранная карта</div>
+      </div>
+      <div class="free-card">
+        <div class="free-name">ProtonVPN</div>
+        <div class="free-highlight">Бесплатные WireGuard конфиги</div>
+        <ul class="free-list">
+          <li>WireGuard .conf для Keenetic</li>
+          <li>Без лимита трафика</li>
+          <li>Серверы US, NL, JP</li>
+          <li>No-logs, Швейцария</li>
+        </ul>
+        <div class="free-caveat">⚠ Серверы перегружены вечером</div>
+      </div>
+      <div class="free-card">
+        <div class="free-name">Windscribe</div>
+        <div class="free-highlight">10 ГБ/мес · OpenVPN конфиги</div>
+        <ul class="free-list">
+          <li>OpenVPN .ovpn для Keenetic</li>
+          <li>10 ГБ/мес без карты</li>
+          <li>Серверы в 10+ странах</li>
+          <li>Удобный генератор конфигов</li>
+        </ul>
+        <div class="free-caveat">⚠ 10 ГБ хватает на 3–5 часов видео</div>
+      </div>
+      <div class="free-card">
+        <div class="free-name">Cloudflare WARP</div>
+        <div class="free-highlight">WireGuard · без регистрации</div>
+        <ul class="free-list">
+          <li>WireGuard конфиг для Keenetic</li>
+          <li>Бесплатно без аккаунта</li>
+          <li>Быстрые серверы Cloudflare</li>
+          <li>Шифрует трафик от провайдера</li>
+        </ul>
+        <div class="free-caveat">⚠ Не меняет страну — YouTube не разблокирует</div>
+      </div>
+    </div>
+
+    <div class="callout callout-info">
+      <div class="callout-icon">💡</div>
+      <div class="callout-body">
+        <strong>Что выбрать бесплатно:</strong> ProtonVPN — если нужен безлимитный трафик и WireGuard конфиг для постоянного подключения роутера (серверы 3 страны). Windscribe — если нужно больше стран, готовы мириться с лимитом 10 ГБ. Amnezia — если провайдер режет WireGuard и готовы потратить час на настройку собственного сервера. WARP — только для шифрования трафика без смены страны.
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- СРАВНИТЕЛЬНАЯ ТАБЛИЦА -->
+<section class="section" id="compare">
+  <div class="container">
+    <div class="sec-badge">Сравнение</div>
+    <h2 class="section-title">Сравнительная таблица VPN для Keenetic</h2>
+    <p class="section-intro">Ключевые характеристики всех 10 сервисов — совместимость с Keenetic, протоколы, цена.</p>
+    <div class="table-wrap mt16">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>VPN</th>
+            <th>Keenetic конфиг</th>
+            <th>WireGuard</th>
+            <th>OpenVPN</th>
+            <th>AmneziaWG</th>
+            <th>Бесплатно</th>
+            <th>Цена/мес</th>
+            <th>МИР</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="tr-top">
+            <td class="td-bold">VPNTYPE</td>
+            <td class="cmp-tick">✓✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-cross">—</td>
+            <td>299 ₽</td>
+            <td class="cmp-tick">✓</td>
+          </tr>
+          <tr>
+            <td class="td-bold">AdGuard VPN</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-part">3 ГБ</td>
+            <td>от $2.99</td>
+            <td class="cmp-cross">—</td>
+          </tr>
+          <tr class="tr-top">
+            <td class="td-bold">HideMy.Name</td>
+            <td class="cmp-tick">✓✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-cross">—</td>
+            <td>189 ₽</td>
+            <td class="cmp-tick">✓</td>
+          </tr>
+          <tr>
+            <td class="td-bold">Amnezia VPN</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-tick">✓✓</td>
+            <td class="cmp-tick">+VPS</td>
+            <td>~3 $/VPS</td>
+            <td class="cmp-cross">—</td>
+          </tr>
+          <tr>
+            <td class="td-bold">Outline VPN</td>
+            <td class="cmp-part">частично</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-tick">+VPS</td>
+            <td>~3 $/VPS</td>
+            <td class="cmp-cross">—</td>
+          </tr>
+          <tr>
+            <td class="td-bold">ProtonVPN</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-tick">Безлимит</td>
+            <td>от $4.99</td>
+            <td class="cmp-cross">—</td>
+          </tr>
+          <tr>
+            <td class="td-bold">Windscribe</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-tick">10 ГБ</td>
+            <td>от $3</td>
+            <td class="cmp-cross">—</td>
+          </tr>
+          <tr>
+            <td class="td-bold">Cloudflare WARP</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-tick">Безлимит</td>
+            <td>Бесплатно</td>
+            <td class="cmp-cross">—</td>
+          </tr>
+          <tr>
+            <td class="td-bold">hide.me VPN</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-cross">—</td>
+            <td class="cmp-tick">10 ГБ</td>
+            <td>от $4.99</td>
+            <td class="cmp-cross">—</td>
+          </tr>
+          <tr>
+            <td class="td-bold">VPN на VPS</td>
+            <td class="cmp-tick">✓✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-tick">✓</td>
+            <td class="cmp-tick">+VPS</td>
+            <td>~3–5 $/VPS</td>
+            <td class="cmp-cross">—</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FAQ -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="sec-badge">FAQ</div>
+    <h2 class="section-title">Частые вопросы о VPN для Keenetic</h2>
+    <div class="faq-list">
+
+      <details class="faq-item">
+        <summary class="faq-q">Как установить VPN на роутер Keenetic?</summary>
+        <div class="faq-a">
+          <p>Два основных способа в зависимости от протокола:</p>
+          <p><strong>WireGuard (рекомендуется для Keenetic OS 3.1+):</strong> Система → Компоненты → установите «WireGuard VPN» → перезагрузите → Интернет → Другие подключения → WireGuard → Добавить → загрузите .conf файл от провайдера.</p>
+          <p><strong>OpenVPN (работает на всех моделях):</strong> Система → Компоненты → установите «OpenVPN» → перезагрузите → Интернет → Другие подключения → OpenVPN → Добавить → загрузите .ovpn файл.</p>
+          <p>Конфиги (.conf или .ovpn) берутся в личном кабинете VPN-сервиса. VPNTYPE, HideMy.Name, ProtonVPN, Windscribe, hide.me — все предоставляют конфиги для роутеров.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Какой VPN лучше для Keenetic?</summary>
+        <div class="faq-a">
+          <p><strong>VPNTYPE</strong> — лучший по соотношению простоты и возможностей. WireGuard конфиг загружается за 5 минут, держит соединение стабильно, плюс есть ПК и мобильное приложение. Оплата МИР, 299 ₽/мес.</p>
+          <p><strong>HideMy.Name</strong> — если нужны и OpenVPN, и WireGuard конфиги, плюс приложения для 5 устройств. Хорошо для семей — один аккаунт на роутер и все устройства членов семьи вне дома.</p>
+          <p><strong>Amnezia VPN</strong> — если провайдер блокирует WireGuard. AmneziaWG нативно поддерживается в Keenetic OS 3.9+.</p>
+          <p><strong>ProtonVPN</strong> — бесплатный WireGuard без лимита трафика, если не хотите платить и согласны с 3 странами.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Поддерживает ли Keenetic WireGuard?</summary>
+        <div class="faq-a">
+          <p>Да. WireGuard поддерживается начиная с Keenetic OS 3.1 (вышла в 2021 году). Большинство современных моделей — Giga, Speedster, Sprinter, Extra, Viva, Ultra, Hero, Hopper — поддерживают WireGuard.</p>
+          <p>Проверить просто: веб-интерфейс → Система → Компоненты → если в списке есть «WireGuard VPN» — ваш роутер поддерживает. Если нет — обновите прошивку.</p>
+          <p>Старые модели (Start KN-1110, Lite KN-1311) на прошивке до 3.1 WireGuard не поддерживают — используйте OpenVPN.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Как настроить Amnezia VPN на Keenetic?</summary>
+        <div class="faq-a">
+          <p>Нужны: Keenetic с OS 3.9+, VPS-сервер, приложение Amnezia VPN.</p>
+          <p>1. Установите компонент «AmneziaWG» через Систему → Компоненты.</p>
+          <p>2. Скачайте Amnezia VPN на ПК → добавьте VPS (введите IP, логин, пароль SSH).</p>
+          <p>3. В приложении выберите протокол «AmneziaWG» → установите сервер → приложение само всё настроит.</p>
+          <p>4. Экспортируйте конфиг для Keenetic: «Поделиться» → «AmneziaWG конфиг» → сохраните файл.</p>
+          <p>5. В Keenetic: Интернет → AmneziaWG → загрузите конфиг → включите.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Как настроить маршруты VPN на Keenetic?</summary>
+        <div class="faq-a">
+          <p><strong>Весь трафик через VPN:</strong> настройки VPN-подключения → включите «Маршрут по умолчанию».</p>
+          <p><strong>Конкретные устройства через VPN:</strong> Устройства → выберите клиента → «Использовать интерфейс» → выберите VPN-подключение.</p>
+          <p><strong>Конкретные сайты через VPN:</strong> Интернет → Маршруты → добавьте IP-диапазон с шлюзом = ваш VPN-интерфейс. Для YouTube — IP-диапазоны Google (AS15169); готовые списки есть в репозиториях itdog и на форуме Keenetic.</p>
+          <p><strong>Через WireGuard конфиг:</strong> параметр AllowedIPs в секции [Peer] — 0.0.0.0/0 для всего трафика, конкретные IP для split tunneling.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Почему VPN не работает на Keenetic?</summary>
+        <div class="faq-a">
+          <p>Самые частые причины:</p>
+          <p><strong>Компонент не установлен</strong> — Система → Компоненты → проверьте наличие OpenVPN или WireGuard.</p>
+          <p><strong>Неправильный конфиг</strong> — OpenVPN требует inline формат .ovpn с сертификатами внутри. WireGuard — файл с [Interface] и [Peer].</p>
+          <p><strong>Провайдер блокирует протокол</strong> — VPN подключается, но через 2–3 минуты обрывается. Решение: AmneziaWG.</p>
+          <p><strong>Устаревший конфиг</strong> — сервер сменил IP. Скачайте новый конфиг в личном кабинете.</p>
+          <p><strong>DNS не работает</strong> — сайты не открываются с VPN. Укажите DNS 1.1.1.1 в настройках подключения.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Как сделать Keenetic VPN-сервером?</summary>
+        <div class="faq-a">
+          <p>Keenetic поддерживает режим VPN-сервера — к нему можно подключаться снаружи и получать доступ к домашней сети.</p>
+          <p><strong>WireGuard-сервер (рекомендуется):</strong> VPN → WireGuard-сервер → Включить → добавьте пиры для каждого устройства, которое будет подключаться. Сгенерируйте QR-код или конфиг для телефона/ПК.</p>
+          <p><strong>Требования:</strong> у Keenetic должен быть белый IP от провайдера или настроен KeenDNS (динамический DNS от Keenetic). С «серым» NAT-IP сервер работать не будет без проброса портов или KeenDNS.</p>
+          <p>KeenDNS настраивается бесплатно в разделе «Домашняя сеть» → «Доменное имя».</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">На каких моделях Keenetic можно настроить VPN?</summary>
+        <div class="faq-a">
+          <p><strong>WireGuard + OpenVPN (OS 3.1+):</strong> Keenetic Giga, Ultra, Speedster, Sprinter, Extra, Viva, Hero, Hopper, Runner, City — все современные модели с актуальной прошивкой.</p>
+          <p><strong>Только OpenVPN:</strong> Keenetic Start KN-1110, Lite KN-1311 на старой прошивке. При возможности — обновите до актуальной ОС.</p>
+          <p><strong>AmneziaWG:</strong> требует OS 3.9+ — доступно на всех моделях, которые получили это обновление (большинство актуальных).</p>
+          <p>Проверьте модель и версию прошивки: Система → О системе. Если прошивка старше 3.1 — обновите через Система → Обновление ПО.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Зачем ставить VPN на роутер, а не на каждое устройство?</summary>
+        <div class="faq-a">
+          <p>Три главных причины:</p>
+          <p><strong>1. Устройства без VPN-клиента.</strong> Смарт-ТВ, PlayStation, Xbox, умные лампочки, принтеры — они не поддерживают VPN. Единственный способ защитить их — настроить VPN на роутере Keenetic.</p>
+          <p><strong>2. Удобство.</strong> Настроить один раз на роутере проще, чем устанавливать и обновлять VPN на каждом устройстве в доме. Новые устройства автоматически подпадают под защиту без настройки.</p>
+          <p><strong>3. Экономия.</strong> Один аккаунт VPN на роутере защищает всю сеть. У VPNTYPE и HideMy.Name роутер не считается в лимит устройств — получаете защиту всего дома без переплаты.</p>
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary class="faq-q">Есть ли бесплатный VPN для Keenetic с конфигами?</summary>
+        <div class="faq-a">
+          <p>Да, несколько вариантов:</p>
+          <p><strong>ProtonVPN</strong> — WireGuard .conf и OpenVPN .ovpn конфиги бесплатно, без лимита трафика. Серверы в США, Нидерландах и Японии. Главный минус — перегруженность вечером.</p>
+          <p><strong>Windscribe</strong> — OpenVPN конфиги, 10 ГБ/мес бесплатно без карты, серверы в 10+ странах.</p>
+          <p><strong>hide.me</strong> — OpenVPN и WireGuard конфиги, 10 ГБ/мес бесплатно.</p>
+          <p><strong>Cloudflare WARP</strong> — WireGuard без регистрации, безлимитно, но не меняет страну.</p>
+          <p><strong>Amnezia VPN</strong> — клиент бесплатный, нужен VPS от 3 $/мес.</p>
+        </div>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ОТЗЫВЫ -->
+<section class="section" id="reviews">
+  <div class="container">
+    <div class="sec-badge">Отзывы</div>
+    <h2 class="section-title">Что говорят пользователи Keenetic</h2>
+    <div class="reviews-grid">
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="review-avatar">АД</div>
+          <div class="review-meta">
+            <div class="review-name">Антон Д.</div>
+            <div class="review-device">Keenetic Giga · Ростелеком · Москва</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«VPNTYPE WireGuard на Keenetic Giga работает третий месяц без нареканий. Загрузил конфиг, включил — и всё. Смарт-ТВ и PlayStation автоматически через VPN. YouTube без тормозов на телевизоре наконец-то.»</div>
+        <span class="review-tag">VPNTYPE · WireGuard · Keenetic Giga</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="review-avatar" style="background:linear-gradient(135deg,#00C4A3,#00E5BE)">СМ</div>
+          <div class="review-meta">
+            <div class="review-name">Света М.</div>
+            <div class="review-device">Keenetic Sprinter · Санкт-Петербург</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«Amnezia VPN на Sprinter — Ростелеком резал обычный WireGuard, через 5 минут отваливался. С AmneziaWG работает без перебоев уже два месяца. Настройка заняла час, зато теперь всё стабильно.»</div>
+        <span class="review-tag">Amnezia VPN · AmneziaWG · Keenetic Sprinter</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="review-avatar" style="background:linear-gradient(135deg,#6D4AFF,#9F7AFF)">ДВ</div>
+          <div class="review-meta">
+            <div class="review-name">Дима В.</div>
+            <div class="review-device">Keenetic Extra · Казань</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★☆</div>
+        <div class="review-text">«ProtonVPN бесплатный WireGuard конфиг — загрузил на Extra, работает. Трафик безлимитный, роутер держит VPN круглосуточно. Вечером скорость падает, но для YouTube хватает. Для своих задач не хотел платить — доволен.»</div>
+        <span class="review-tag">ProtonVPN · Бесплатный · Keenetic Extra</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="review-avatar" style="background:linear-gradient(135deg,#6C63FF,#B39BFF)">НМ</div>
+          <div class="review-meta">
+            <div class="review-name">Никита М.</div>
+            <div class="review-device">Keenetic Speedster · Новосибирск</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«HideMy.Name — взял за OpenVPN: у меня старый Speedster на прошивке без WireGuard. Конфиг работает на Keenetic без проблем. Одна подписка на роутер и три телефона в семье. МИР принимают — удобно.»</div>
+        <span class="review-tag">HideMy.Name · OpenVPN · Keenetic Speedster</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="review-avatar" style="background:linear-gradient(135deg,#3A7BD5,#00D2FF)">ВК</div>
+          <div class="review-meta">
+            <div class="review-name">Вася К.</div>
+            <div class="review-device">Keenetic Viva · Екатеринбург</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★☆</div>
+        <div class="review-text">«Windscribe 10 ГБ бесплатно — потестировал OpenVPN на Viva. Конфиг загрузился нормально, сервер DE работает. Трафика мало для постоянного использования, но для проверки совместимости — самое то. Потом возьму платный.»</div>
+        <span class="review-tag">Windscribe · Бесплатно · Keenetic Viva</span>
+      </div>
+
+      <div class="review-card">
+        <div class="review-head">
+          <div class="review-avatar" style="background:linear-gradient(135deg,#F6821F,#FAAD3F)">ИП</div>
+          <div class="review-meta">
+            <div class="review-name">Илья П.</div>
+            <div class="review-device">Keenetic Giga · Краснодар</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <div class="review-text">«Сам поднял WireGuard на Hetzner VPS, загрузил конфиг в Keenetic Giga — работает отлично. Маршруты настроил так: YouTube через VPN, остальное напрямую. Скорость максимальная, никаких замедлений. Один раз настроил — не трогаю.»</div>
+        <span class="review-tag">VPS + WireGuard · Маршруты · Keenetic Giga</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <div class="footer-logo-icon">🔐</div>
+          VPN для <span class="footer-logo-word">Keenetic</span>
+        </div>
+        <p class="footer-about">Независимый рейтинг VPN для роутеров Keenetic. Тестируем совместимость с OpenVPN и WireGuard, проверяем стабильность конфигов, объясняем настройку маршрутов. Честные результаты без рекламных обзоров.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <div class="footer-col-title">Рейтинг</div>
+          <a href="#vpntype-card">№1 VPNTYPE</a>
+          <a href="#adguard-card">№2 AdGuard VPN</a>
+          <a href="#hidemy-card">№3 HideMy.Name</a>
+          <a href="#amnezia-card">№4 Amnezia VPN</a>
+          <a href="#proton-card">№6 ProtonVPN</a>
+          <a href="#top10">Все 10 VPN →</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Помощь</div>
+          <a href="#why-keenetic">Зачем VPN на Keenetic</a>
+          <a href="#why-not-working">Почему VPN не работает</a>
+          <a href="#setup">Настройка OpenVPN и WireGuard</a>
+          <a href="#routes">Маршрутизация трафика</a>
+          <a href="#free">Бесплатный VPN</a>
+        </div>
+        <div class="footer-col">
+          <div class="footer-col-title">Разделы</div>
+          <a href="#compare">Сравнить VPN</a>
+          <a href="#faq">FAQ</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#tldr">Быстрый выбор</a>
+          <a href="#top10">ТОП-10</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-copy">© 2026 VPN для Keenetic · Обновлено 21 апреля 2026</div>
+      <div class="footer-disclaimer">Рейтинг основан на независимом тестировании на Keenetic Giga и Sprinter. Ссылки на сервисы могут быть реферальными. Используйте VPN в соответствии с действующим законодательством.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+

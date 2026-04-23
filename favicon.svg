@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0F1923"/>
+      <stop offset="100%" stop-color="#071420"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF6B35"/>
+      <stop offset="100%" stop-color="#F7931E"/>
+    </linearGradient>
+    <linearGradient id="ant" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFD166"/>
+      <stop offset="100%" stop-color="#FF6B35"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#00E5BE"/>
+      <stop offset="100%" stop-color="#00C4A3"/>
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="0.7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="32" height="32" rx="7" fill="url(#bg)"/>
+  <!-- Router body -->
+  <rect x="3" y="19" width="26" height="9" rx="2.5" fill="url(#body)" filter="url(#glow)"/>
+  <!-- Left antenna -->
+  <rect x="7.5" y="9" width="2" height="10.5" rx="1" fill="url(#ant)"/>
+  <!-- Right antenna -->
+  <rect x="22.5" y="9" width="2" height="10.5" rx="1" fill="url(#ant)"/>
+  <!-- WiFi arc outer -->
+  <path d="M10.5 17.5 Q16 11 21.5 17.5" stroke="#FFD166" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  <!-- WiFi arc inner -->
+  <path d="M13 15.8 Q16 12.8 19 15.8" stroke="#FF6B35" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+  <!-- WiFi dot -->
+  <circle cx="16" cy="14" r="1.3" fill="#00FF88" filter="url(#glow)"/>
+  <!-- Shield on router -->
+  <path d="M16 21.5 L13.5 22.7 L13.5 25.5 Q16 27.2 18.5 25.5 L18.5 22.7 Z" fill="url(#shield)" opacity="0.96"/>
+  <!-- Lock keyhole in shield -->
+  <circle cx="16" cy="23.8" r="0.9" fill="#0F1923"/>
+  <rect x="15.4" y="24.3" width="1.2" height="1.2" rx="0.2" fill="#0F1923"/>
+  <!-- LED indicators -->
+  <circle cx="6" cy="23.5" r="1.1" fill="#00FF88" filter="url(#glow)"/>
+  <circle cx="9" cy="23.5" r="1.1" fill="#00FF88" opacity="0.4"/>
+  <circle cx="26" cy="23.5" r="1.1" fill="#FF6B35"/>
+</svg>
